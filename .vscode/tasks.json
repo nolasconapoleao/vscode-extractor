@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Extract service",
+			"type": "shell",
+			"command": "python .vscode\\script.py ${relativeFileDirname}",
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+
+		{
+			"label": "Print service",
+			"type": "shell",
+			"command": "echo ${config:service}"
+		}
+	]
+}
